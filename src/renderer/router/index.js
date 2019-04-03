@@ -8,7 +8,11 @@ export default new Router({
         {
             path: '/',
             name: 'home',
-            // name: 'landing-page',
+            component: require('@/components/home/HomeComponent').default
+        },
+        {
+            path: '/play',
+            name: 'play',
             component: require('@/components/play/PlayVideoComponent').default
         },
         {

@@ -22,8 +22,9 @@ function createWindow() {
         width: 1000,
         useContentSize: true,
         center: true,
-        frame: true
-    })
+        frame: true,
+        resizable: false
+    });
     // 去除menu菜单
     Menu.setApplicationMenu(null)
 
