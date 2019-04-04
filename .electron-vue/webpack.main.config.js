@@ -16,6 +16,7 @@ let mainConfig = {
     ...Object.keys(dependencies || {})
   ],
   module: {
+    // noParse: [/videojs-contrib-hls/],
     rules: [
       {
         test: /\.(js)$/,

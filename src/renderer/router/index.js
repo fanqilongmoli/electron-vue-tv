@@ -16,6 +16,11 @@ export default new Router({
             component: require('@/components/play/PlayVideoComponent').default
         },
         {
+            path: '/play2',
+            name: 'play2',
+            component: require('@/components/play/PlayVideoComponent2').default
+        },
+        {
             path: '*',
             redirect: '/'
         }

@@ -70,7 +70,7 @@
                                 return;
                             console.log("insert", newDoc._id);
                             self.videoInfo.name = '';
-                            self.videoInfo.path = ''
+                            self.videoInfo.path = '';
                             self.getVideoInfoList()
                         })
                     } else {
@@ -82,9 +82,10 @@
             addDialogCancel() {
                 this.$refs.addDialogInput.resetFields();
                 this.addDialogShow = false
+
             },
             handlePlay(index, row) {
-                this.$router.push({name: 'play', query: {name: row.name, path: row.path}})
+                this.$router.push({name: 'play2', query: {name: row.name, path: row.path}})
             },
             handleDelete(index, row) {
                 let self = this;
@@ -101,6 +102,11 @@
                     self.videoInfoList = docs
                 });
                 console.log("db", remote.app.getPath('userData'))
+                this.$notify({
+                    title: 'db位置',
+                    message: remote.app.getPath('userData'),
+                    duration: 0
+                });
             }
 
         },

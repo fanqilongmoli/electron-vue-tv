@@ -23,7 +23,7 @@ function createWindow() {
         useContentSize: true,
         center: true,
         frame: true,
-        resizable: false
+        resizable: true
     });
     // 去除menu菜单
     Menu.setApplicationMenu(null)
@@ -31,6 +31,9 @@ function createWindow() {
     mainWindow.loadURL(winURL)
 
     mainWindow.setTitle("f-tv")
+
+    // 打开开发者工具
+    //mainWindow.webContents.openDevTools()
 
     mainWindow.on('closed', () => {
         mainWindow = null
