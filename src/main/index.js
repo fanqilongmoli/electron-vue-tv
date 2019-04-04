@@ -33,7 +33,7 @@ function createWindow() {
     mainWindow.setTitle("f-tv")
 
     // 打开开发者工具
-    //mainWindow.webContents.openDevTools()
+    mainWindow.webContents.openDevTools()
 
     mainWindow.on('closed', () => {
         mainWindow = null
