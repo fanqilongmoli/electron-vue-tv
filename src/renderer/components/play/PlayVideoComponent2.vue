@@ -57,13 +57,13 @@
                     type: 'application/x-mpegURL',
                     src: path
                 },
-                // controlBar: {
-                //     timeDivider: false,
-                //     durationDisplay: false
-                // },
-                // flash: {hls: {withCredentials: false}},
-                // html5: {hls: {withCredentials: false}},
-                //poster: "https://ws1.sinaimg.cn/large/0065oQSqly1g0ajj4h6ndj30sg11xdmj.jpg"
+                controlBar: {
+                    timeDivider: false,
+                    durationDisplay: false
+                },
+                flash: {hls: {withCredentials: false}},
+                html5: {hls: {withCredentials: false}},
+                poster: "https://ws1.sinaimg.cn/large/0065oQSqly1g0ajj4h6ndj30sg11xdmj.jpg"
             }
 
         }
