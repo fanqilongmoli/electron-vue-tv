@@ -1,7 +1,7 @@
 {
   "name": "electron-vue-tv",
   "version": "0.0.1",
-  "author": "fanqilong <fanql@jxgtmbjt.com>",
+  "author": "fanqilong",
   "description": "electron vue tv",
   "license": null,
   "main": "./dist/electron/main.js",
